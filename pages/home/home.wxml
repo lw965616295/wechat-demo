@@ -1,0 +1,25 @@
+<view>
+  <text class="t1">hello {{name}}</text>
+  <button class="weui-btn weui-btn_primary" bindtap="tapHandler">提示</button>
+  <button class="weui-btn weui-btn_primary" bindtap="clickHandler">弹框</button>
+  <swiper indicator-dots="{{true}}"  
+    autoplay="{{true}}"
+    style="width: 750rpx;">
+    <swiper-item>
+      <image src="https://picsum.photos/200"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://picsum.photos/201" ></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://picsum.photos/202" ></image>
+    </swiper-item>
+  </swiper>
+  <button class="weui-btn weui-btn_primary" bindtap="reqHandler">请求url</button>
+  <button class="weui-btn weui-btn_primary"  bind:tap="infoHandler">获取用户信息</button>
+  <button class="weui-btn weui-btn_primary" bindtap="loginHandler">登录</button>
+  <button class="weui-btn weui-btn_primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+  <navigator url="../second/second">前往第二页</navigator>
+</view>
+
+
